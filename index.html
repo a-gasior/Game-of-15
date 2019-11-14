@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Game of 15</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="gamelogic.js"></script>
+  
+</head>
+<body>
+    <main>
+
+    <header class="header"><h1>Otis Puzzle</h1></header>
+
+    <div class="flex-container">
+
+        <section class="tutorial">
+            <h2>Game Tutorial</h2>
+            <p>If you've never played before, try the simple version.  You can do that by clicking the button below.  The goal of the game is to organize all the numbers from left to right top to bottom starting at zero.  Items may only be moved if an adjacent square is empty.</p>
+            <button onclick="simpleGame()">Easy Game</button>
+            <p>If you want to reinitialize the map you can click the New Game button below.  It will reconfigure a new map for you.</p>
+            <button onclick="intitializeBoard()">New Game</button>
+            </section>
+
+        <section class="gamebox">
+                        <div class="flex-container">
+                            <section class="tile" id="0"> </section>
+                            <section class="tile" id="1"> </section>
+                            <section class="tile" id="2"> </section>
+                            <section class="tile" id="3"> </section>
+                        </div>
+                    
+                        <div class="flex-container">
+                            <section class="tile" id="4"> </section>
+                            <section class="tile" id="5"> </section>
+                            <section class="tile" id="6"> </section>
+                            <section class="tile" id="7"> </section>
+                        </div>
+
+                        <div class="flex-container">
+                            <section class="tile" id="8"> </section>
+                            <section class="tile" id="9"> </section>
+                            <section class="tile" id="10"> </section>
+                            <section class="tile" id="11"> </section>
+                        </div>
+
+                        <div class="flex-container">
+                            <section class="tile" id="12"> </section>
+                            <section class="tile" id="13"> </section>
+                            <section class="tile" id="14"> </section>
+                            <section class="tileBlank" id="15"> </section>
+                        </div>
+        </section>
+
+        <section class="stats">
+            <h2>Game Statistics</h2>
+            <p><h3>Moves so far:</h3></p>
+            <p id="gameTurns">0</p>
+            <p><h3>Time this match:</h3></p>
+            <p id="gameTime">0</p>
+            <p>There are a lot of neat tricks you can use to beat this game.  Be careful though, some starting configurations make the game impossible to beat.  Don't be like the developer and spend an hour pulling his hair out because he can't get a win.  Use google to find the solution for you.</p>
+        </section>
+
+    </div>
+
+    <footer class="footer">I love you<p>Andrew Gasiorowski</p><p>2019</p></footer>
+
+    </main>
+</body>
+</html>
